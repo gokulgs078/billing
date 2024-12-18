@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Information</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="billing-container">
+        
+        <div class="header-section">
+            <h1>Billing Information</h1>
+            <p>Update your billing details and address</p>
+        </div>
+
+        
+        <div class="section">
+            <div class="section-left">
+                <h3>Payment details</h3>
+            </div>
+            <div class="section-right">
+                <div class="input-field">
+                    <label for="card-number">Card number</label>
+                    <input type="text" id="card-number" placeholder="1234 1234 1234 1234">
+                </div>
+                <div class="input-field">
+                    <label for="cardholder-name">Cardholder name</label>
+                    <input type="text" id="cardholder-name" placeholder="Full name on card">
+                </div>
+                <div class="input-grid">
+                    <div class="input-field" id="top_row">
+                        <label for="expiry">Expiry</label>
+                        <input type="text" id="expiry" placeholder="MM/YY">
+                    </div>
+                    <div class="input-field" id="top_row">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        
+        <div class="section">
+            <div class="section-left">
+                <h3>Email address</h3>
+            </div>
+            <div class="section-right">
+                <div class="input-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="user@example.com">
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+
+        
+        <div class="section">
+            <div class="section-left">
+                <h3>Address details</h3>
+            </div>
+            <div class="section-right">
+                <div class="input-field">
+                    <label for="country">Country / Region</label>
+                    <select id="country">
+                        <option>United States</option>
+                    </select>
+                </div>
+                <div class="input-field">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="Street address">
+                    <input type="text" id="address2" placeholder="Apartment, suite, etc (optional)">
+                </div>
+                <div class="input-grid">
+                    <div class="input-field">
+                        <label for="city">City</label>
+                        <input type="text" id="city" placeholder="City">
+                    </div>
+                    <div class="input-field">
+                        <label for="state">State</label>
+                        <select id="state">
+                            <option>State</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" placeholder="123">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="save-button">
+            <button>Save changes</button>
+        </div>
+    </div>
+</body>
+</html>
