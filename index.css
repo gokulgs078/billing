@@ -165,8 +165,8 @@ button:hover {
     padding-left: 10px;
 }
 
-.input-field input::placeholder {
-    padding-left: 50px; /* Add space for the image (35px image + 10px margin + 10px extra) */
+.input-field .master_card {
+    padding-left: 50px;
     padding-right: 10px; 
     padding-top: 8px;
     padding-bottom: 8px;
@@ -175,7 +175,7 @@ button:hover {
     font-size: 14px;
     box-sizing: border-box;
     background-color: #d0d6d0;
-    width: 100%; /* Full width of the parent container */
+    width: 100%;
 }
 
 .input-field input::placeholder {
@@ -319,5 +319,3 @@ button:hover {
         font-size: 14px; 
     }
 }
-
-
