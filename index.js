@@ -63,7 +63,7 @@ document.getElementById('billing-form').onsubmit = function(event) {
 
     let isValid = true;
 
-    // Card number validation
+    
     const cardNumber = document.getElementById('card-number').value;
     const cardNumberRegex = /^\d{16}$/;
     if (!cardNumberRegex.test(cardNumber)) {
@@ -71,7 +71,7 @@ document.getElementById('billing-form').onsubmit = function(event) {
         isValid = false;
     }
 
-    // Cardholder name validation
+    
     const cardholderName = document.getElementById('cardholder-name').value;
     const nameRegex = /^[a-zA-Z\s'-]{2,40}$/;
     if (!nameRegex.test(cardholderName)) {
@@ -79,15 +79,15 @@ document.getElementById('billing-form').onsubmit = function(event) {
         isValid = false;
     }
 
-    // Expiry validation
+    
     const expiry = document.getElementById('expiry').value;
-    const expiryRegex = /^(0[1-9]|1[0-2])\/\d{2}$/;  // MM/YY format
+    const expiryRegex = /^(0[1-9]|1[0-2])\/\d{2}$/;  
     if (!expiryRegex.test(expiry)) {
         document.getElementById('expiry-error').textContent = 'Expiry must be in MM/YY format (e.g., 08/25).';
         isValid = false;
     }
 
-    // CVV validation
+    
     const cvv = document.getElementById('cvv').value;
     const cvvRegex = /^\d{3}$/;
     if (!cvvRegex.test(cvv)) {
@@ -95,7 +95,7 @@ document.getElementById('billing-form').onsubmit = function(event) {
         isValid = false;
     }
 
-    // Email validation
+    
     const email = document.getElementById('email').value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
@@ -103,35 +103,35 @@ document.getElementById('billing-form').onsubmit = function(event) {
         isValid = false;
     }
 
-    // Address validation
+    
     const address = document.getElementById('address').value;
     if (address.trim() === '') {
         document.getElementById('address-error').textContent = 'Address is required.';
         isValid = false;
     }
 
-    // City validation
+    
     const city = document.getElementById('city').value;
     if (city.trim() === '') {
         document.getElementById('city-error').textContent = 'City is required.';
         isValid = false;
     }
 
-    // State validation
+    
     const state = document.getElementById('state').value;
     if (!state) {
         document.getElementById('state-error').textContent = 'State is required.';
         isValid = false;
     }
 
-    // Country validation
+    
     const country = document.getElementById('country').value;
     if (!country) {
         document.getElementById('country-error').textContent = 'Country is required.';
         isValid = false;
     }
 
-    // Zip code validation
+    
     const zip = document.getElementById('zip').value;
     const zipRegex = /^\d+$/;
     if (!zipRegex.test(zip)) {
@@ -139,7 +139,7 @@ document.getElementById('billing-form').onsubmit = function(event) {
         isValid = false;
     }
 
-    // If form is valid, submit the form
+    
     if (isValid) {
         const billData = {
             cardNumber,
