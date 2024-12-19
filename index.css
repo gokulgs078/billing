@@ -26,13 +26,7 @@ hr{
 }
 
 #top_row {
-    width: 60%;
-    /* padding: 40%; */
-    /* justify-content: space-between; */
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
-
-    
+    width: 60%;  
 }
 
 .header-section {
@@ -145,16 +139,23 @@ button:hover {
     border: 2px solid red;
 }
 
-.input-field img {
-    width: 35px;
-    height: 24px;
-    position: absolute;
-    top: 50%;
-    padding-right: 50px;
-    margin-right: 50px;
-    /* transform: translateY(-50%); */
-    left: 10px;
+.input-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    justify-content: space-between;
+ 
     
+}
+
+
+
+#card-number{
+    background: url(mastercard.jpeg) no-repeat;
+    background-size: 40px 30px;
+    background-color: #d0d6d0;
+    padding-top: 8px;
 }
 
 .card-number {
@@ -163,6 +164,7 @@ button:hover {
 
 .card-number::placeholder {
     padding-left: 10px;
+    padding-top: 1rem;
 }
 
 .input-field .master_card {
@@ -180,18 +182,10 @@ button:hover {
 
 .input-field input::placeholder {
     color: #555;
+    padding-top: 1rem;
 }
 
-.input-field {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    justify-content: space-between;
- 
-    /* background-color: #a8b9a9; */
-    /* padding: auto; */
-}
+
 
 
 @media (max-width: 1024px) {
